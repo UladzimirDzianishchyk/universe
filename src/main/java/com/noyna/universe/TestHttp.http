@@ -1,0 +1,38 @@
+POST http://localhost:8080/createLord
+Content-Type: application/json
+
+
+{
+ "name": "First",
+  "age": "25"
+
+
+}
+
+###
+
+POST http://localhost:8080/createPlanet
+Content-Type: application/json
+
+
+{
+  "name": "First",
+  "lord": {"id": "1"}
+
+
+}
+
+###
+
+DELETE http://localhost:8080/deletPlanetById
+Content-Type: application/json
+
+
+{
+  "id": "2"
+
+
+}
+
+###
+GET http://localhost:8080/findIdlers
